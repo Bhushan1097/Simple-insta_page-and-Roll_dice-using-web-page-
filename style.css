@@ -1,0 +1,71 @@
+/* Apply a global font, background color, and some spacing */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #eaeaea; /* Light gray background for the entire page */
+    color: #333;
+}
+
+/* Style the heading */
+h2 {
+    color: #444;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the buttons with background color */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the horizontal line */
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Style for each post container with background color */
+.post-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for each post */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Style the post image */
+.post-container img {
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Style the post details (likes and comments) */
+.post-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Additional styling for better spacing */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Light background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

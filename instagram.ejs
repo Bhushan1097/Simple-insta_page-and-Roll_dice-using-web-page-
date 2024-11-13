@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Link to the CSS file in the public folder -->
+</head>
+<body>
+    <h2>This page belongs to @<%= data.name %></h2>
+    <button>follow</button>
+    <button>message</button>
+
+    <hr />
+
+    <% for (let post of data.posts) { %>
+    <div class="post-container">
+        <img src="<%= post.image %>" alt="dog image" height="100" width="100">
+        <div class="post-details">
+            <p>Likes: <%= post.likes %></p>
+            <p>Comments: <%= post.comments %></p>
+        </div>
+    </div>
+    <% } %>
+</body>
+</html>
